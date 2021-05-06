@@ -1,0 +1,164 @@
+/* Basic Style */
+  body {
+    background: #ffffff;
+    color: #333;
+    /* font-family: Lato, sans-serif; */
+    font-family : Roboto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background : #EEE;
+    padding : 1rem;
+  }
+
+  .addBtn {
+  	margin-top : 3vh;
+    background: coral;
+    color: white;
+    font-weight : bold;
+    font-size: 1rem;
+    font-family: Roboto;
+    cursor: pointer;
+    width : auto;
+    border-radius : 1rem;
+    padding: 0.6rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 50%);
+  	transition: all 0.3s ease 0s;
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0;
+  }
+
+  li * {
+    float: left;
+  }
+
+  li, h3 {
+    clear :both;
+    list-style :none;
+  }
+
+  input, button {
+    outline: none;
+  }
+
+  button {
+    background: none;
+    border: 0px;
+    color: #888888;
+    font-size: 15px;
+    width: 60px;
+    cursor: pointer;
+    text-align : center;
+  }
+
+  button :hover {
+    color: #333;
+  }
+
+  /* Heading */
+  h3,
+  label[for='new-task'] {
+    color: #333333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 30px 0 10px;
+    margin: 0px;
+    text-transform: uppercase;
+  }
+
+  input[type="text"]  {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1;
+    height: 18px;
+    padding: 10px;
+    font-family: 'Roboto';
+    color: #888;
+    border: 2px solid black;
+    font-weight: 300;
+    border-radius : 1rem;
+  }
+
+  input[type="text"] :focus {
+    color: #333;
+  }
+
+  /* New Task */
+  input#new-task   {
+    float: left;
+    width: 318px;
+  }
+
+  p > button :hover {
+    color: #0FC57C;
+  }
+
+  /* Task list */
+  li {
+    overflow: hidden;
+    padding: 20px 0px;
+    border-bottom: 1px solid darkgrey;
+  }
+
+  li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+  }
+
+  li > label {
+    font-size:18px;
+    line-height: 40px;
+    width: 237px;
+    padding:0 0 0 11px;
+  }
+  
+  li >  input[type="text"] {
+    width: 226px;
+  }
+
+  li > .delete :hover {
+    color: #CF2323;
+  }
+
+  /* Completed */
+  #completed-tasks label {
+    text-decoration: line-through;
+    color: coral;
+    font-style: italic;
+  }
+
+  /* Edit Task */
+  ul li input[type=text] {
+    display :none;
+  }
+
+  ul li.editMode input[type=text] {
+    display :block;
+  }
+
+  ul li.editMode label {
+    display :none;
+  }
+
+  @media (max-width: 375px) {
+  	 .container{
+  	 	flex: 100%;
+  	 }
+  }
+  
+  @media (max-width: 600px) {
+  	 body{
+  	 	background : #EEE;
+  	 }
+  }
