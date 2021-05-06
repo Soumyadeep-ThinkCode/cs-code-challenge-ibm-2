@@ -14,3 +14,11 @@ This is the Solution 2 of the IBM ANF CS Code Challenge.
 5. Minimal changes on the code base have been done to retain its original essence.
 6. LocalStorage has been used to hold on to the values saved in the form and that will continue to hold the value till the LocalStorage is erased.
 
+Responsiveness -
+
+![image](https://user-images.githubusercontent.com/19331184/117364324-6164d100-aedb-11eb-8b1b-bf31cd840acf.png)
+
+Local Storage use (To act as temporary data saving database on browser) -
+
+![image](https://user-images.githubusercontent.com/19331184/117364390-79d4eb80-aedb-11eb-8eac-c3c09b065cd1.png)
+
